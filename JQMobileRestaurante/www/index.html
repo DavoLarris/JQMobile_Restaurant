@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.rateyo.min.css">
+    <title>JQMobileRestaurante</title>
+
+</head>
+<body>
+    <section id="page1" data-role="page">
+        <div class="content" data-role="content">
+            <img src="images/logo.png" style="width:100%;height:100%">
+            <h2>¿Que quieres comer hoy?</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page2" data-icon="arrow-d" data-transition="slidedown"><img src="images/1484326384_unknown2.png">Macarrones</a></li>
+                <li><a href="#page2" data-icon="arrow-d" data-transition="slidedown"><img src="images/1484326384_unknown2.png">Borraja</a></li>
+                <li><a href="#page2" data-icon="arrow-d" data-transition="slidedown"><img src="images/1484326384_unknown2.png">Cosas ricas</a></li>
+                <li><a href="#page2" data-icon="arrow-d" data-transition="slidedown"><img src="images/1484326384_unknown2.png">Cosas malas</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page2" data-role="page">
+        <header data-role="header">
+            <a data-rel="back" data-icon="back">Back</a>
+            <h5>Selector de restaurantes</h5>
+        </header>
+        <div class="content" data-role="content">
+            <div data-inset="true">
+                <label>Buscar restaurante:</label>
+                <ul data-role="listview" data-filter="true">
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Barañain<span class="ui-li-count">9</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Pamplona<span class="ui-li-count">5</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Mi casa<span class="ui-li-count">6</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Bully<span class="ui-li-count">2</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Casa Mikel<span class="ui-li-count">3</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Casa Asier<span class="ui-li-count">9</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Casa Asepeyo<span class="ui-li-count">2</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Barañain<span class="ui-li-count">7</span></a></li>
+                    <li><a href="#page3" data-icon="arrow-d" data-transition="fade">Barañain<span class="ui-li-count">3</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer data-role="footer">
+            <h1>4vientos</h1>
+        </footer>
+    </section>
+
+    <section id="page3" data-role="page">
+        <header data-role="header">
+            <a data-rel="back" data-icon="back">Back</a>
+            <h5>Selector de restaurantes</h5>
+        </header>
+        <div class="content" data-role="content">
+            <h2>Selecciona un restaurante</h2>
+            <ul data-role="listview" data-inset="true">
+                <li>
+                    <a href="#page4" data-icon="arrow-d" data-transition="flip">
+                        <img src="images/1484326384_unknown2.png">
+                        Casa tarradellas
+                        <div id="rateYo"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#page4" data-icon="arrow-d" data-transition="flip">
+                        <img src="images/1484326384_unknown2.png">
+                        Restaurante tu primo
+                        <div id="rateYo1"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#page4" data-icon="arrow-d" data-transition="flip">
+                        <img src="images/1484326384_unknown2.png">
+                        Cosas
+                        <div id="rateYo2"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer data-role="footer">
+            <h1>4vientos</h1>
+        </footer>
+    </section>
+
+    <section id="page4" data-role="page">
+        <header data-role="header">
+            <a data-rel="back" data-icon="back">Back</a>
+            <h5>Selector de restaurantes</h5>
+        </header>
+        <div class="content" data-role="content">
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1>Nombre</h1>
+                    <p>Descripcion</p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="images/1484326384_unknown2.png"><br />
+                    <a data-role="button" class="" href="https://www.google.com" data-mini="true">Visitanos</a>
+                </div>
+            </div>
+
+            <hr />
+
+            <div id="div2" class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1>Contacto</h1>
+                    <p>Correo</p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="images/1484326384_unknown2.png"><br />
+                </div>
+            </div>
+            <form>
+                <label for="select-choice-0" class="select"><h2>Puntuanos</h2></label>
+                <select name="note_utilisateur" data-native-menu="false" data-theme="c">
+                    <option value="one" class="one"> Not good at all </option>
+                    <option value="two" class="two">Average </option>
+                    <option value="three" class="three">Pretty good </option>
+                    <option value="four" class="four"> Excellent </option>
+                </select>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script> <!-- Primero este. -->
+    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.rateyo.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+</body>
+</html>
